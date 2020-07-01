@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import NavbarComponent from './Navbar';
 
-const Burger = ({ open, roundEffect, isHide }) => {
+const Burger = ({ isHide }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [click, setClick] = useState(false);
 
@@ -14,7 +14,6 @@ const Burger = ({ open, roundEffect, isHide }) => {
   const openNav = () => {
     setIsOpen(!isOpen);
     setClick(true);
-    // eslint-disable-next-line no-unused-expressions
   };
   const iconBurger = () => {
     if (isOpen) {

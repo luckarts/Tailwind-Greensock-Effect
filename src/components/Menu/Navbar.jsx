@@ -27,7 +27,7 @@ const NavbarComponent = ({ isOpen, click }) => {
       }
     }
   }, [isOpen, click]);
-
+  /*  eslint-disable  */
   return [
     <nav key={0} id="nav" ref={navbar} className={'box-shadow hidden h-screen w-full z-10 fixed overflow-hidden'}>
       <div className="flex h-full" ref={grid}>

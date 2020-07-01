@@ -23,7 +23,7 @@
     "react-redux": "^7.2.0",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.0.1",
+    "react-scripts": "^3.4.1",
     "react-scroll": "^1.7.16",
     "redux": "^4.0.5",
     "tailwindcss-animations": "^2.0.0",
@@ -59,13 +59,17 @@
   "devDependencies": {
     "@babel/core": "^7.10.3",
     "@storybook/react": "^5.3.19",
+    "@storybook/storybook-deployer": "^2.8.6",
     "autoprefixer": "^9.6.0",
     "babel-loader": "^8.1.0",
-    "postcss-cli": "^6.1.2",
+    "postcss-cli": "^7.1.1",
     "prettier-eslint": "^11.0.0",
     "prettier-eslint-cli": "^5.0.0",
     "redux-devtools-extension": "^2.13.8",
     "tailwindcss": "^1.4.6",
     "tailwindcss-pseudo-elements": "^1.1.2"
+  },
+  "optionalDependencies": {
+    "fsevents": "^2.1.3"
   }
 }

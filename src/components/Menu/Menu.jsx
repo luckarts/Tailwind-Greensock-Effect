@@ -18,6 +18,7 @@ const Menu = () => {
     },
     [setIsHide]
   );
+  /*  eslint-disable  */
   return [
     <div key={0} className="fixed w-full z-10 ">
       <div
