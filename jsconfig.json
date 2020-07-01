@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2016",
+    "jsx": "react",
+    "checkJs": true,
+    "experimentalDecorators": true,
+    "baseUrl": "./src",
+    "paths": {
+      "pages/*": ["pages/*"],
+      "shared/*": ["shared/*"],
+      "components/*": ["components/*"]
+    }
+  },
+
+  "exclude": ["node_modules", "**/node_modules/*"]
+}

@@ -1,0 +1,23 @@
+.navlink::before {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+  background-color: white;
+  height: 1px;
+  content: '';
+  transform-origin: left;
+  transform: scaleX(0);
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+.navlink:hover::before {
+  transform: scaleY(1);
+}
+.icon path,
+.icon ellipse {
+  fill: none;
+  stroke: #1f1f1f;
+  stroke-width: 3;
+  stroke-miterlimit: 10;
+}

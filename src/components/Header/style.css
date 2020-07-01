@@ -1,0 +1,26 @@
+.paralax::before {
+  background-image: url(/img/87705829_o.jpg);
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: 25% 55%;
+  transform: translateZ(-1px) scale(2);
+}
+@media (max-width: 640px) {
+  .paralax::before {
+    opacity: 0.6;
+    background-size: 50%;
+    background-position: center;
+  }
+}
+.paralax {
+  perspective: 2px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}

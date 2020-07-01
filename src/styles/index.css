@@ -1,4 +1,3 @@
-
 /**
  * This injects Tailwind's base styles, which is a combination of
  * Normalize.css and some additional base styles.
@@ -10,9 +9,9 @@
  *
  * @import "tailwindcss/base";
  */
- @tailwind base;
+@tailwind base;
 
- /**
+/**
   * This injects any component classes registered by plugins.
   *
   * If using `postcss-import`, use this import instead:
@@ -35,8 +34,8 @@
   * @import "components/buttons";
   * @import "components/forms";
   */
- 
- /**
+
+/**
   * This injects all of Tailwind's utility classes, generated based on your
   * config file.
   *
@@ -59,3 +58,34 @@
   * @import "utilities/background-patterns";
   * @import "utilities/skew-transforms";
   */
+.cursor {
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid red;
+  border-radius: 50%;
+  position: absolute;
+}
+body {
+}
+html {
+  overflow: scroll;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
+#fv-dots {
+  position: fixed;
+  top: 50%;
+  left: 96%;
+  transform: translate(-50%, -50%);
+}
+#fv-dots ul li a {
+  display: block;
+  margin: auto;
+  width: 10px;
+  height: 10px;
+  text-align: center;
+}

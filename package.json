@@ -3,16 +3,43 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@ap.cx/react-fullpage": "^0.2.0",
+    "@fullpage/react-fullpage": "^0.1.17",
+    "@n8tb1t/use-scroll-position": "^1.0.43",
+    "@storybook/addon-knobs": "^5.3.19",
+    "animate.css": "^4.1.0",
+    "classnames": "^2.2.6",
+    "fullview": "^1.0.8",
+    "gsap": "^3.3.3",
+    "html-react-parser": "^0.13.0",
+    "jquery": "^3.5.1",
+    "mini-css-extract-plugin": "^0.9.0",
+    "postcss-import": "^12.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
+    "react-full-page": "^0.1.9",
+    "react-multi-ref": "^1.0.0",
+    "react-page-scroller": "^2.0.7-beta",
+    "react-redux": "^7.2.0",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.0.1",
+    "react-scroll": "^1.7.16",
+    "redux": "^4.0.5",
+    "tailwindcss-animations": "^2.0.0",
+    "tailwindcss-gradients": "^3.0.0",
+    "tailwindcss-typography": "^3.1.0"
   },
   "scripts": {
-    "build:style":"tailwind build src/styles/index.css -o src/styles/tailwind.css",
+    "build:style": "tailwind build src/styles/index.css -o src/styles/tailwind.css",
     "start": "npm run build:style && react-scripts start",
-    "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint '**/*.js'",
+    "lint:fix": "prettier-eslint --write '**/*.js'",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public",
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -30,8 +57,15 @@
     ]
   },
   "devDependencies": {
+    "@babel/core": "^7.10.3",
+    "@storybook/react": "^5.3.19",
     "autoprefixer": "^9.6.0",
+    "babel-loader": "^8.1.0",
     "postcss-cli": "^6.1.2",
-    "tailwindcss": "^1.0.4"
+    "prettier-eslint": "^11.0.0",
+    "prettier-eslint-cli": "^5.0.0",
+    "redux-devtools-extension": "^2.13.8",
+    "tailwindcss": "^1.4.6",
+    "tailwindcss-pseudo-elements": "^1.1.2"
   }
 }
